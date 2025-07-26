@@ -116,7 +116,7 @@
                 <div class="mt-10">
                     <div class="flex flex-col sm:flex-row items-center md:items-start">
                         <div class="p-4 flex-shrink-0 border rounded mb-4 sm:mb-0 sm:mr-4">
-                            <img src="{{ asset('storage/' . $event->gambar_event) }}" alt="Event 1"
+                            <img src="{{ asset('content/' . $event->gambar_event) }}" alt="Event 1"
                                 class="object-cover h-64 w-full sm:h-48 sm:w-48">
                         </div>
                         <div class="w-full">

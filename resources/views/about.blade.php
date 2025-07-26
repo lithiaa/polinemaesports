@@ -71,7 +71,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                     <div class="text-center">
                         <div class="flex justify-center mb-4">
-                            <img src="storage/icon/puzzle.png" alt="Icon 1" class="w-12 h-12">
+                            <img src="content/icon/puzzle.png" alt="Icon 1" class="w-12 h-12">
                         </div>
                         <h4 class="text-lg font-bold text-white">Kenalan dan Relasi</h4>
                         <p class="text-gray-300 mt-2">Mahasiswa dapat menjalin pertemanan baru dan membangun hubungan dengan
@@ -80,7 +80,7 @@
 
                     <div class="text-center">
                         <div class="flex justify-center mb-4">
-                            <img src="storage/icon/gamepad.png" alt="Icon 2" class="w-12 h-12">
+                            <img src="content/icon/gamepad.png" alt="Icon 2" class="w-12 h-12">
                         </div>
                         <h4 class="text-lg font-bold text-white">Event dan Turnamen</h4>
                         <p class="text-gray-300 mt-2">Kesempatan untuk mengikuti event dan berkompetisi di turnamen tingkat
@@ -90,7 +90,7 @@
 
                     <div class="text-center">
                         <div class="flex justify-center mb-4">
-                            <img src="storage/icon/chat.png" alt="Icon 3" class="w-12 h-12">
+                            <img src="content/icon/chat.png" alt="Icon 3" class="w-12 h-12">
                         </div>
                         <h4 class="text-lg font-bold text-white">Kerjasama dan Kolaborasi</h4>
                         <p class="text-gray-300 mt-2">Kami membina game yang mendorong kerjasama tim, sehingga membantu
@@ -135,15 +135,15 @@
                 <!-- Carousel wrapper -->
                 <div class="relative h-96 overflow-hidden md:h-96">
                     <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-                        <img src="storage/foto_dokumentasi/dokumentasi1.jpg"
+                        <img src="content/foto_dokumentasi/dokumentasi1.jpg"
                             class="block w-full h-full object-cover" alt="...">
                     </div>
                     <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-                        <img src="storage/foto_dokumentasi/dokumentasi2.jpg"
+                        <img src="content/foto_dokumentasi/dokumentasi2.jpg"
                             class="block w-full h-full object-cover" alt="...">
                     </div>
                     <div class="hidden duration-1000 ease-in-out" data-carousel-item>
-                        <img src="storage/foto_dokumentasi/dokumentasi3.jpg"
+                        <img src="content/foto_dokumentasi/dokumentasi3.jpg"
                             class="block w-full h-full object-cover" alt="...">
                     </div>
                 </div>

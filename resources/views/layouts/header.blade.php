@@ -3,7 +3,7 @@
         <div class="flex justify-between items-center">
             <!-- Logo dan Tombol Toggle Mobile Menu -->
             <a href="{{ route('landing') }}">
-                <img src="storage/polinemaesports.png" alt="Logo Polinema Esports" width="90" height="90">
+                <img src="content/polinemaesports.png" alt="Logo Polinema Esports" width="90" height="90">
             </a>
             <div class="flex lg:hidden">
                 <button id="mobile-menu-button" class="focus:outline-none">

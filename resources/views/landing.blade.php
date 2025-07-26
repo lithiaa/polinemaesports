@@ -10,7 +10,7 @@
                             <div class="flex flex-col sm:flex-row w-full h-full transition-opacity duration-1000 ease-in-out"
                                 data-carousel-item>
                                 <div class="relative w-full sm:w-1/2 h-56 sm:h-full">
-                                    <img src="{{ asset('storage/' . $n->gambar_news) }}"
+                                    <img src="{{ asset('content/' . $n->gambar_news) }}"
                                         class="block w-full h-full object-cover" alt="...">
                                     <div class="absolute inset-0">
                                     </div>
@@ -56,7 +56,7 @@
                                 <a href="{{ route('event.show', $event->id_event) }}">
                                     <div class="p-4 flex-shrink transition transform hover:scale-105 hover:bg-gray-700 h-full w-full">
                                     <div class="p-4 flex-shrink-0 border mb-4 sm:mb-0 sm:mr-4">
-                                        <img src="{{ asset('storage/' . $event->gambar_event) }}"
+                                        <img src="{{ asset('content/' . $event->gambar_event) }}"
                                             alt="{{ $event->nama_event }}" class="w-700 h-700">
                                     </div>
                                         <p class="text-xl sm:text-2xl mt-5 font-medium text-gray-100">
@@ -100,11 +100,11 @@
 
             <section class="w-full relative">
                 <div class="flex flex-col md:flex-row bg-black bg-opacity-50 items-center w-full">
-                    <img src="storage/foto_divisi/MobileLegends.jpg" alt="Mobile Legends"
+                    <img src="content/foto_divisi/MobileLegends.jpg" alt="Mobile Legends"
                         class="w-full h-80 sm:h-96 object-cover">
                     <div
                         class="absolute top-0 left-0 right-0 bottom-0 z-30 flex flex-col items-center justify-center p-6 text-center bg-black bg-opacity-50 backdrop-blur-lg">
-                        <img src="storage/foto_divisi/MobileLegendsLogo.png" alt="Mobile Legends Logo"
+                        <img src="content/foto_divisi/MobileLegendsLogo.png" alt="Mobile Legends Logo"
                             class="w-40 sm:w-60 h-auto">
                     </div>
                 </div>
@@ -112,11 +112,11 @@
 
             <section class="w-full relative">
                 <div class="flex flex-col md:flex-row bg-black bg-opacity-50 items-center w-full">
-                    <img src="storage/foto_divisi/PUBGM.jpg" alt="PUBG Mobile"
+                    <img src="content/foto_divisi/PUBGM.jpg" alt="PUBG Mobile"
                         class="w-full h-80 sm:h-96 object-cover">
                     <div
                         class="absolute top-0 left-0 right-0 bottom-0 z-30 flex flex-col items-center justify-center p-6 text-center bg-black bg-opacity-50 backdrop-blur-lg">
-                        <img src="storage/foto_divisi/PUBGMLogo.png" alt="PUBG Mobile Logo"
+                        <img src="content/foto_divisi/PUBGMLogo.png" alt="PUBG Mobile Logo"
                             class="w-40 sm:w-60 h-auto">
                     </div>
                 </div>
@@ -124,11 +124,11 @@
 
             <section class="w-full relative">
                 <div class="flex flex-col md:flex-row bg-black bg-opacity-50 items-center w-full">
-                    <img src="storage/foto_divisi/Valorant.jpg" alt="Valorant"
+                    <img src="content/foto_divisi/Valorant.jpg" alt="Valorant"
                         class="w-full h-80 sm:h-96 object-cover">
                     <div
                         class="absolute top-0 left-0 right-0 bottom-0 z-30 flex items-center justify-center p-6 text-center bg-black bg-opacity-50 backdrop-blur-lg">
-                        <img src="storage/foto_divisi/ValorantLogo.png" alt="Valorant Logo"
+                        <img src="content/foto_divisi/ValorantLogo.png" alt="Valorant Logo"
                             class="w-40 sm:w-60 h-auto">
                     </div>
                 </div>
@@ -136,11 +136,11 @@
 
             <section class="w-full relative">
                 <div class="flex flex-col md:flex-row bg-black bg-opacity-50 items-center w-full">
-                    <img src="storage/foto_divisi/HonorOfKings.jpg" alt="Honor of Kings"
+                    <img src="content/foto_divisi/HonorOfKings.jpg" alt="Honor of Kings"
                         class="w-full h-80 sm:h-96 object-cover">
                     <div
                         class="absolute top-0 left-0 right-0 bottom-0 z-30 flex items-center justify-center p-6 text-center bg-black bg-opacity-50 backdrop-blur-lg">
-                        <img src="storage/foto_divisi/HonorOfKingsLogo.png" alt="Honor of Kings Logo"
+                        <img src="content/foto_divisi/HonorOfKingsLogo.png" alt="Honor of Kings Logo"
                             class="w-40 sm:w-60 h-auto">
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                             <div class="flex">
                                 <div class="p-4 flex-shrink">
                                     <a href="https://www.evos.gg/">
-                                        <img src="storage/foto_partner/partner1.png" alt="Partner 1"
+                                        <img src="content/foto_partner/partner1.png" alt="Partner 1"
                                             height="200" width="200">
                                     </a>
                                 </div>
@@ -165,7 +165,7 @@
                             <div class="flex">
                                 <div class="p-4 flex-shrink">
                                     <a href="https://moontonstudentleader.com.my/msl-landing">
-                                        <img src="storage/foto_partner/partner2.png" alt="Partner 2"
+                                        <img src="content/foto_partner/partner2.png" alt="Partner 2"
                                             height="200" width="200">
                                     </a>
                                 </div>
@@ -173,7 +173,7 @@
                             <div class="flex">
                                 <div class="p-4 flex-shrink">
                                     <a href="https://pmjc.id/">
-                                        <img src="storage/foto_partner/partner3.png" alt="Partner 3"
+                                        <img src="content/foto_partner/partner3.png" alt="Partner 3"
                                             height="200" width="200">
                                     </a>
                                 </div>
@@ -181,7 +181,7 @@
                             <div class="flex">
                                 <div class="p-4 flex-shrink">
                                     <a href="https://hokacecommunity.id/">
-                                        <img src="storage/foto_partner/partner4.png" alt="Partner 4"
+                                        <img src="content/foto_partner/partner4.png" alt="Partner 4"
                                             height="200" width="200">
                                     </a>
                                 </div>

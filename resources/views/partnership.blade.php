@@ -11,7 +11,7 @@
             <div class="mt-10 space-y-10">
                 <div class="flex flex-col sm:flex-row items-start sm:items-start">
                     <div class="p-4 flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
-                        <img src="storage/foto_partner/partner1.png" alt="EVOS Esports" height="200"
+                        <img src="content/foto_partner/partner1.png" alt="EVOS Esports" height="200"
                             width="200">
                     </div>
                     <div class="w-full sm:w-auto">
@@ -53,7 +53,7 @@
                 </div>
                 <div class="flex flex-col sm:flex-row items-start sm:items-start">
                     <div class="p-4 flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
-                        <img src="storage/foto_partner/partner2.png" alt="MSL" height="200" width="200">
+                        <img src="content/foto_partner/partner2.png" alt="MSL" height="200" width="200">
                     </div>
                     <div class="w-full sm:w-auto">
                         <div class="box-content h-auto">
@@ -94,7 +94,7 @@
                 </div>
                 <div class="flex flex-col sm:flex-row items-start sm:items-start">
                     <div class="p-4 flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
-                        <img src="storage/foto_partner/partner3.png" alt="PMJC" height="200" width="200">
+                        <img src="content/foto_partner/partner3.png" alt="PMJC" height="200" width="200">
                     </div>
                     <div class="w-full sm:w-auto">
                         <div class="box-content h-auto">
@@ -136,7 +136,7 @@
                 </div>
                 <div class="flex flex-col sm:flex-row items-start sm:items-start">
                     <div class="p-4 flex-shrink-0 mb-4 sm:mb-0 sm:mr-4">
-                        <img src="storage/foto_partner/partner4.png" alt="HOK Ace Community" height="200"
+                        <img src="content/foto_partner/partner4.png" alt="HOK Ace Community" height="200"
                             width="200">
                     </div>
                     <div class="w-full sm:w-auto">

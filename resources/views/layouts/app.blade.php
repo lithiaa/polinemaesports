@@ -7,7 +7,7 @@
     <meta itemprop="url" content="https://polinemaesports.id/"/>
     <meta itemprop="name" content="Polinema Esports"/>
     <title>Polinema Esports</title>
-    <link rel="icon" href="storage/polinemaesports.ico" type="image/x-icon">
+    <link rel="icon" href="content/polinemaesports.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 

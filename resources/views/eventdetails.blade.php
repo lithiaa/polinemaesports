@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Polinema Esports</title>
-    <link rel="icon" href="../storage/polinemaesports.png" type="image/x-icon">
+    <link rel="icon" href="../content/polinemaesports.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@tailus/tailus-ui@1.0.0-beta.1/dist/tailus-ui.min.css" rel="stylesheet">
     <style>
@@ -21,7 +21,7 @@
             <div class="flex justify-between items-center">
                 <!-- Logo dan Tombol Toggle Mobile Menu -->
                 <a href="{{ route('landing') }}">
-                    <img src="../storage/polinemaesports.png" alt="Logo Polinema Esports" width="100" height="100">
+                    <img src="../content/polinemaesports.png" alt="Logo Polinema Esports" width="100" height="100">
                 </a>
                 <div class="flex lg:hidden">
                     <button id="mobile-menu-button" class="focus:outline-none">
@@ -57,7 +57,7 @@
                     </p>
                     <div
                         class="p-4 pt-6 sm:pt-10 flex-shrink-0 border rounded justify-items-center flex justify-center items-center">
-                        <img src="{{ asset('storage/' . $event->gambar_event) }}" alt="Event 1" height="750" width="750">
+                        <img src="{{ asset('content/' . $event->gambar_event) }}" alt="Event 1" height="750" width="750">
                     </div>
                 </div>
                 <div class="mt-2 sm:mt-10">
@@ -80,7 +80,7 @@
     <footer class="bg-gray-800">
         <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
             <nav class="flex flex-wrap justify-left">
-                <img src="../storage/polinemaesports.png" alt="Logo Polinema Esports" width="150" height="150">
+                <img src="../content/polinemaesports.png" alt="Logo Polinema Esports" width="150" height="150">
                 {{-- <div class="px-5 py-2">
                     <a href="#" class="text-base text-gray-400 hover:text-gray-300">About</a>
                 </div>

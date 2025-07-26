@@ -2,7 +2,7 @@
     <footer class="bg-gray-800 w-full mt-auto">
         <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
             <nav class="flex justify-between items-center">
-                <img src="storage/polinemaesports.png" alt="Logo Polinema Esports" width="130" height="130">
+                <img src="content/polinemaesports.png" alt="Logo Polinema Esports" width="130" height="130">
                 @auth
                     @php
                         $user = Auth::user();
