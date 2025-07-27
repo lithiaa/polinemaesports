@@ -56,7 +56,7 @@
                                 <a href="{{ route('event.show', $event->id_event) }}">
                                     <div class="p-4 flex-shrink transition transform hover:scale-105 hover:bg-gray-700 h-full w-full">
                                     <div class="p-4 flex-shrink-0 border mb-4 sm:mb-0 sm:mr-4">
-                                        <img src="{{ asset('content/' . $event->gambar_event) }}"
+                                        <img src="{{ asset('storage/' . $event->gambar_event) }}"
                                             alt="{{ $event->nama_event }}" class="w-700 h-700">
                                     </div>
                                         <p class="text-xl sm:text-2xl mt-5 font-medium text-gray-100">

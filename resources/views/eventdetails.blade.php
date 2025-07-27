@@ -57,7 +57,7 @@
                     </p>
                     <div
                         class="p-4 pt-6 sm:pt-10 flex-shrink-0 border rounded justify-items-center flex justify-center items-center">
-                        <img src="{{ asset('content/' . $event->gambar_event) }}" alt="Event 1" height="750" width="750">
+                        <img src="{{ asset('storage/' . $event->gambar_event) }}" alt="Event 1" height="750" width="750">
                     </div>
                 </div>
                 <div class="mt-2 sm:mt-10">
