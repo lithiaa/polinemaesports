@@ -10,7 +10,7 @@
                             <div class="flex flex-col sm:flex-row w-full h-full transition-opacity duration-1000 ease-in-out"
                                 data-carousel-item>
                                 <div class="relative w-full sm:w-1/2 h-56 sm:h-full">
-                                    <img src="{{ asset('content/' . $n->gambar_news) }}"
+                                    <img src="{{ asset('storage/' . $n->gambar_news) }}"
                                         class="block w-full h-full object-cover" alt="...">
                                     <div class="absolute inset-0">
                                     </div>

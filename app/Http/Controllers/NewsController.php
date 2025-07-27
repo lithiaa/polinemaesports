@@ -63,17 +63,17 @@ class NewsController extends Controller
             ]);
 
             // Create full path
-            $full_path = public_path('content/' . $safe_filename);
-            $relative_path = $safe_filename;
-            
+            $full_path = storage_path('app/public/foto_news/' . $safe_filename);
+            $relative_path = 'foto_news/' . $safe_filename;
+
             // Ensure directory exists
-            $directory = public_path('content');
+            $directory = storage_path('app/public/foto_news');
             if (!file_exists($directory)) {
                 mkdir($directory, 0755, true);
             }
 
-            // Move the uploaded file to public/content directory
-            if ($gambar_news->move(public_path('content'), $safe_filename)) {
+            // Move the uploaded file to storage/app/public/foto_news directory
+            if ($gambar_news->move(storage_path('app/public/foto_news'), $safe_filename)) {
                 Log::info('News file moved successfully', [
                     'path' => $relative_path,
                     'full_path' => $full_path
@@ -105,14 +105,14 @@ class NewsController extends Controller
     {
         try {
             $news = News::find($id);
-            
+
             if (!$news) {
                 return redirect('/news')->with('error', 'News tidak ditemukan.');
             }
 
             // Delete the image file if it exists
             if ($news->gambar_news) {
-                $imagePath = public_path('content/' . $news->gambar_news);
+                $imagePath = storage_path('app/public/' . $news->gambar_news);
                 if (file_exists($imagePath)) {
                     unlink($imagePath);
                 }

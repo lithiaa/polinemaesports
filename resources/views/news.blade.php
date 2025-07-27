@@ -63,7 +63,9 @@
                                 <input type="file" id="gambar_news" name="gambar_news" accept="image/*"
                                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     required onchange="previewImage(event)">
-                                <img id="preview" class="mt-4 w-full rounded shadow" src="#" alt="Preview Image" style="display: none;">
+                                <div class="mt-4 w-full" style="display: none;" id="preview-container">
+                                    <img id="preview" class="w-full rounded shadow object-cover" src="#" alt="Preview Image" style="aspect-ratio: 16/9;">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -89,7 +91,7 @@
     <!-- Delete Confirmation Modal -->
     <div id="delete-modal" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center opacity-0 pointer-events-none" style="transition: opacity 0.25s ease;">
         <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-        
+
         <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50">
             <div class="modal-content py-4 text-left px-6">
                 <!-- Title -->
@@ -101,13 +103,13 @@
                         </svg>
                     </div>
                 </div>
-                
+
                 <!-- Body -->
                 <div class="mb-4">
                     <p class="text-gray-700">Apakah Anda yakin ingin menghapus news ini? Tindakan ini tidak dapat dibatalkan.</p>
                     <p class="text-sm text-gray-500 mt-2" id="news-name-display"></p>
                 </div>
-                
+
                 <!-- Footer -->
                 <div class="flex justify-end">
                     <button type="button"
@@ -145,8 +147,9 @@
             const reader = new FileReader();
             reader.onload = function() {
                 const preview = document.getElementById('preview');
+                const previewContainer = document.getElementById('preview-container');
                 preview.src = reader.result;
-                preview.style.display = 'block';
+                previewContainer.style.display = 'block';
             };
             reader.readAsDataURL(event.target.files[0]);
         }
@@ -155,10 +158,10 @@
             const modal = document.getElementById('delete-modal');
             const form = document.getElementById('delete-form');
             const nameDisplay = document.getElementById('news-name-display');
-            
+
             form.action = deleteUrl;
             nameDisplay.textContent = `News: ${newsName}`;
-            
+
             modal.classList.remove('opacity-0');
             modal.classList.remove('pointer-events-none');
             document.body.classList.add('modal-active');
@@ -175,12 +178,12 @@
         setTimeout(function() {
             const successMessage = document.getElementById('success-message');
             const errorMessage = document.getElementById('error-message');
-            
+
             if (successMessage) {
                 successMessage.style.opacity = '0';
                 setTimeout(() => successMessage.remove(), 300);
             }
-            
+
             if (errorMessage) {
                 errorMessage.style.opacity = '0';
                 setTimeout(() => errorMessage.remove(), 300);
@@ -207,9 +210,9 @@
             @forelse ($news as $n)
                 <div class="mt-10">
                     <div class="flex flex-col sm:flex-row items-center md:items-start">
-                        <div class="p-4 flex-shrink-0 border rounded mb-4 sm:mb-0 sm:mr-4">
-                            <img src="{{ asset('content/' . $n->gambar_news) }}" alt="News Image"
-                                class="object-cover h-64 w-full sm:h-48 sm:w-48">
+                        <div class="p-4 flex-shrink-0 border rounded mb-4 sm:mb-0 sm:mr-4" style="width: 300px;">
+                            <img src="{{ asset('storage/' . $n->gambar_news) }}" alt="News Image"
+                                class="object-cover w-full rounded" style="aspect-ratio: 16/9;">
                         </div>
                         <div class="w-full">
                             <div class="flex justify-between items-start">
