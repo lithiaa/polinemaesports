@@ -104,6 +104,12 @@ class NewsController extends Controller
     public function destroy($id)
     {
         try {
+            // Check if there's only 1 news item
+            $newsCount = News::count();
+            if ($newsCount <= 1) {
+                return redirect('/news')->with('error', 'Tidak dapat menghapus news terakhir. Harus ada minimal 1 news.');
+            }
+
             $news = News::find($id);
 
             if (!$news) {
