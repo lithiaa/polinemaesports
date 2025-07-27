@@ -19,6 +19,10 @@ Route::get('/events/{id}', [App\Http\Controllers\EventController::class, 'show']
 Route::post('/events', [App\Http\Controllers\EventController::class, 'store'])->name('event.store')->middleware('auth');
 Route::delete('/events/{id}', [App\Http\Controllers\EventController::class, 'destroy'])->name('event.destroy')->middleware('auth');
 
+Route::get('/news', [App\Http\Controllers\NewsController::class, 'index'])->name('news')->middleware('auth');
+Route::post('/news', [App\Http\Controllers\NewsController::class, 'store'])->name('news.store')->middleware('auth');
+Route::delete('/news/{id}', [App\Http\Controllers\NewsController::class, 'destroy'])->name('news.destroy')->middleware('auth');
+
 Route::get('/partnership', [App\Http\Controllers\PartnershipController::class, 'index'])->name('partnership');
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 

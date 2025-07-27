@@ -16,6 +16,9 @@
             <div class="hidden lg:flex justify-end space-x-3">
                 <a class="p-1 px-4 font-semibold hover:text-yellow-500 {{ request()->routeIs('landing') ? 'bg-yellow-500 rounded-lg text-white' : '' }}" href="{{ route('landing') }}">Home</a>
                 <a class="p-1 px-4 font-semibold hover:text-yellow-500 {{ request()->routeIs('event') ? 'bg-yellow-500 rounded-lg text-white' : '' }}" href="{{ route('event') }}">Events</a>
+                @auth
+                    <a class="p-1 px-4 font-semibold hover:text-yellow-500 {{ request()->routeIs('news') ? 'bg-yellow-500 rounded-lg text-white' : '' }}" href="{{ route('news') }}">News</a>
+                @endauth
                 <a class="p-1 px-4 font-semibold hover:text-yellow-500 {{ request()->routeIs('partnership') ? 'bg-yellow-500 rounded-lg text-white' : '' }}" href="{{ route('partnership') }}">Partnership</a>
                 <a class="p-1 px-4 font-semibold hover:text-yellow-500 {{ request()->routeIs('about') ? 'bg-yellow-500 rounded-lg text-white' : '' }}" href="{{ route('about') }}">About Us</a>
             </div>
@@ -24,6 +27,9 @@
         <div class="lg:hidden flex-col items-end" id="mobile-menu" style="display: none;">
             <a class="block mt-4 font-semibold hover:text-yellow-500" href="{{ route('landing') }}">Home</a>
             <a class="block mt-4 font-semibold hover:text-yellow-500" href="{{ route('event') }}">Events</a>
+            @auth
+                <a class="block mt-4 font-semibold hover:text-yellow-500" href="{{ route('news') }}">News</a>
+            @endauth
             <a class="block mt-4 font-semibold hover:text-yellow-500" href="{{ route('partnership') }}">Partnership</a>
             <a class="block mt-4 font-semibold hover:text-yellow-500" href="{{ route('about') }}">About Us</a>
         </div>
